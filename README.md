@@ -22,3 +22,15 @@ $ uv add "pydantic-extra-types[pendulum]"
 # via pip
 $ pip install -U "pydantic-extra-types[pendulum]"
 ```
+
+The `PhoneNumber` type supports the full `phonenumbers` package. If the
+geocoder, carrier, and timezone data are not needed, use the smaller
+`phonenumberslite` extra instead:
+
+```shell
+# via uv
+$ uv add "pydantic-extra-types[phonenumberslite]"
+
+# via pip
+$ pip install -U "pydantic-extra-types[phonenumberslite]"
+```
